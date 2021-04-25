@@ -1,7 +1,7 @@
 # PokeGAN
 A 512x512 [stylegan2-ada](https://github.com/NVlabs/stylegan2-ada) model trained on pokemon images
 
-# Datset
+# Dataset
 The dataset was taken from this [kaggle](https://www.kaggle.com/brilja/pokemon-mugshots-from-super-mystery-dungeon)Pokemon Mugshots dataset
 
 The datset contained 64x64 images of pokemonm, which is a little too small
