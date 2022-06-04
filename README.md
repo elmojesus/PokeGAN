@@ -18,3 +18,5 @@ Instead, I used Google Colab Pro and trained StyleGan2-ada on Tesla V100s for a 
 # Results
 ![novel_1](novel_1.png)
 ![novel_2](novel_2.png)
+
+2 Novel pokemon generated from network.
