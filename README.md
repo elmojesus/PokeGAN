@@ -1,22 +1,16 @@
-# PokeGAN
-A 512x512 [stylegan2-ada](https://github.com/NVlabs/stylegan2-ada) model trained on pokemon images
+# PokeGAN - Exploration of generating novel Pokemon using Deep Convolutional Generative Adversarial Networks
 
 # Dataset
-The dataset was taken from this [kaggle](https://www.kaggle.com/brilja/pokemon-mugshots-from-super-mystery-dungeon) Pokemon Mugshots dataset
-
-The datset contained 64x64 images of pokemonm, which is a little too small
-
-I used [waifu2x-chainer](https://github.com/tsurumeso/waifu2x-chainer), to upscale the mugshots to 512x512
+A total of 4881 Pokemon mugshots were sourced from [Kaggle Pokemon Mugshots](https://www.kaggle.com/brilja/pokemon-mugshots-from-super-mystery-dungeon) dataset. 
+Original images from dataset measure 64x64 and have too small of a resolution. To address this, images from dataset were upscaled to 512x512 using [waifu2x-chainer](https://github.com/tsurumeso/waifu2x-chainer).
 
 ![smol](smd/0_01.png)
 ![big](w2x/0_01.png)
 
-# Training
-Originally wanted to train on free GCP TPU's provided by [TRC](https://sites.research.google/trc/), but porting stylegan2-ada to work on TPUs proved to be a challenge.
-Instead, I used Google Colab Pro and trained StyleGan2-ada on Tesla V100s for a few days
-
 # Results
 ![novel_1](novel_1.png)
 ![novel_2](novel_2.png)
-
 2 Novel pokemon generated from network.
+
+# Training
+Trained on Google Colab Pro on StyleGan2-ada using Tesla V100s for multiple days.
